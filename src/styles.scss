@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+$grad1: rgba(48,48,48,0.75);
+$grad0: rgba(255,255,255,0);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient($grad1,$grad0);
+    padding: 1.3em 0 2.5em 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a.logo {
+        font-weight: 600;
+        font-size: 40px;
+        text-shadow: 3px 4px 5px rgba(0,0,0,0.35);
+    }
+
+    nav {
+        float: right;
+        color: white;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: .7em;
+            display: flex;
+            font-family: 'Montserrat','sans-serif';
+            font-weight: 600;
+            font-size: 21px;
+
+            li a {
+                padding: 1em 0 1em 2.5em;
+                text-shadow: 3px 3px 3px rgba(0,0,0,0.35);
+            }
+        }
+    }
+}
